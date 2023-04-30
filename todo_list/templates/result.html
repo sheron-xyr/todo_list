@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<h1>Events</h1>
+
+    <table>
+  <tr>
+    <th>Event Name</th>
+    <th>Remain Days</th>
+    <th>Urgency</th>
+  </tr>
+        {% for item in result %}
+            <tr>
+                <th>{{ item.eventname }}</th>
+                <th>{{ item.deadline }}</th>
+                <th>{{ item.urgency }}</th>
+            </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{{ url_for('hello') }}">Return</a></p>
+</body>
+</html>

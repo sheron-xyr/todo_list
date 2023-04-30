@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <form action="{{ url_for('eventa') }}" method="post">
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" value="event"><br>
+        <label for="days">Due Date:</label>
+        <input type="date" id="days" name="days" value="2024-01-01"><br>
+        <label for="urgency">Urgency(1 for the least, 5 for the most):</label>
+        <select id="urgency" name="urgency">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

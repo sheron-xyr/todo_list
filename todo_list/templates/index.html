@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>A Simple TODO List!</h1>
+    <p><a href="{{ url_for('add') }}">Add an Event</a></p>
+    <p><a href="{{ url_for('complete') }}">Complete an Event</a></p>
+    <p><a href="{{ url_for('show') }}">Show All Events</a></p>
+</body>
+</html>
