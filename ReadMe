@@ -1,0 +1,20 @@
+Some tools needed to be installed before: 
+    python3, 
+    flask, 
+    sqlite3
+
+Getting start:
+    type following commands in the commond window: 
+        tar -xzvf todo_list.tar.gz
+        cd todo_list
+
+Using a new database:
+    type following commands in the commond window: 
+        rm db.sqlite3
+        sqlite3 db.sqlite3 < schema.sql
+        python3 rest_api.py
+Using the same database:
+    type following command in the commond window: 
+        python3 rest_api.py
+        
+then open the url "http://localhost:8000" and use the website!
